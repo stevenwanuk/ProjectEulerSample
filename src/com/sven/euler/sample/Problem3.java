@@ -44,41 +44,5 @@ public class Problem3
                 break;
             }
         }
-        
     }
-    
-    public static void main1(String[] args)
-    {
-
-        long num = 600851475143l;
-        for (long i = num; i > 2; i--)
-        {
-            System.out.println(i);
-
-            if (num % i > 0)
-            {
-                continue;
-            }
-
-            boolean isPrimeNumber = true;
-            for (long j = 2; j < i; j++)
-            {
-                if (i % j == 0)
-                {
-                    isPrimeNumber = false;
-                    break;
-                }
-
-            }
-
-            if (isPrimeNumber)
-            {
-
-                System.out.println("found:" + i);
-                break;
-            }
-        }
-
-    }
-
 }
